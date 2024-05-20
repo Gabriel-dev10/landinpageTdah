@@ -281,7 +281,7 @@ section.main-section{
 }
 
 .slide{
-    transform: translateX(-300%);
+    transform: translateX(0%);
 }
 
 
@@ -299,5 +299,9 @@ section.main-section{
 
 .slide:nth-child(4){
     left: 300%;
+}
+
+.slide:nth-child(5){
+    left: 400%;
 }
 

@@ -1,26 +1,28 @@
-// inicio carrosel de imgs
-
+// seleciona os elementos no html
 const slides = document.querySelectorAll('.slide');
 const nextBtn = document.querySelector('.skipbtn');
 const backBtn = document.querySelector('.backbtn');
 
+// define a posição dos slides na horizontal
 slides.forEach(function(slide, index){
     slide.style.left = `${index * 100}%`;
 });
 
 let counter = 0;
 
+
 backBtn.addEventListener('click', function (){
-    counter--;
+    counter--; 
     carousel();
 });
 
 nextBtn.addEventListener('click', function (){
-    counter++;
-    carousel();
+    counter++; 
+    carousel(); 
 });
 
 function carousel() {
+    
     if (counter === slides.length) {
         counter = 0;
     }
@@ -34,4 +36,4 @@ function carousel() {
     });
 }
 
-// fim carrosel de imgs
+// fim carrossel de imgs
