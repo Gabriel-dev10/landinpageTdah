@@ -1,0 +1,165 @@
+/* fim topo */
+section.main-sobre{
+    padding: 40px 4%;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.sobre-txt h1{
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 50px;
+    color: purple;
+}
+
+section.site2{
+    display: flex;
+}
+
+.site2 img{
+    margin-left: 300px;
+    border: 3px solid black;
+    border-radius: 20px;
+}
+
+.site2 p{
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: justify;
+    word-spacing: -0.1rem;
+    margin-left: 300px;
+    max-width: 760px;
+}
+
+section.main-participantes{
+    padding: 40px 4%;
+}
+
+.participantestxt h1{
+    margin-bottom: 150px;
+    text-align: center;
+    font-size: 50px;
+    color: purple;
+}
+
+.limite{
+    max-width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-box{
+    margin: 0 20px;
+}
+
+.main-box img{
+    width: 250px;
+    border-radius: 20px;
+    border: 2px solid purple;
+}
+
+.main-box h3, p{
+    text-align: center;
+}
+
+.main-box p{
+    font-size: 20px;
+}
+/* fim meio */
+footer.formulario{
+    padding: 80px 4%;
+}
+
+.box-footer{
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.box-footer h2{
+    margin-bottom: 150px;
+    text-align: center;
+    font-size: 50px;
+    color: purple;
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+form input, form textarea{
+    width: 100%;
+    background-color: rgba(19, 19, 19, 0.288);
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 20px;
+    color: white;
+    font-size: 18px;
+}
+
+.box-footer h2{
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+form textarea{
+    resize: none;
+    max-height: 200px;
+}
+
+.button-enviar{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.button-enviar button{
+    background: purple;
+    color: white;
+    font-weight: 300;
+    cursor: pointer;
+    border: 0;
+    padding: 20px 40px;
+    border-radius: 20px;
+    
+}
+
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo-footer{
+    margin: 30px;
+}
+
+.logo-footer img{
+    width: 300px;
+}
+
+.socialmedia{
+    margin-top: -220px;
+    text-align: end;
+}
+
+.socialmedia img{
+    margin: 20px;
+    width: 56px;
+    cursor: pointer;
+    border: 2px solid rgba(128, 0, 128, 0.39);
+    border-radius: 20%;
+    background: rgba(128, 0, 128, 0.774);
+}
+
+.socialmedia p{
+    font-size: 20px;
+}

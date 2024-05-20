@@ -1,0 +1,67 @@
+  <section id="sobre-section" class="main-sobre">
+            <div class="sobre-txt">
+                <h1>SOBRE</h1>
+                <div class="site2">
+                    <img src="activs/img/Captura de tela 2024-04-27 214850.png" alt="">
+                    <p>A ideia original é a criação de um site de planner com o intuito de ajuda as pessoas com o TDAH ( Transtorno de Deficit de Atenção e Hiperatividade) usando do seus problemas como um auxílio para eles fazendo um site, e futuramente um aplicativo, que fale com você para deixar as coisas organizadas, te ajudando a deixar tudo nos conformes e ainda te lembrar de todas os seus afazeres.</p>
+                </div>
+            </div>
+        </section>
+        <section id="participantes-section" class="main-participantes">
+            <div class="participantestxt">
+                <h1>PARTICIPANTES <span>!</span></h1>
+                <div class="limite">
+                    <div class="main-box">
+                        <img src="activs/img/clara.png" alt="">
+                        <h3>Clara Moledo</h3>
+                        <p>Chefe de pesquisa</p>
+                    </div>
+                    <div class="main-box">
+                        <img src="activs/img/chicao.png" alt="">
+                        <h3>Francisco Miguez</h3>
+                        <p>Líder do projeto</p>
+                    </div>
+                    <div class="main-box">
+                        <img src="activs/img/gabriel.png" alt="">
+                        <h3>Gabriel Santana</h3>
+                        <p>Desenvolvedor front-end</p>
+                        
+                    </div>
+                    <div class="main-box">
+                        <img src="activs/img/josé.jpeg" alt="">
+                        <h3>José Felipe</h3>
+                        <p>Design</p>
+                    </div>
+                    <div class="main-box">
+                        <img src="activs/img/lucas.jpeg" alt="">
+                        <h3>Lucas Oliveira</h3>
+                        <p>Desenvolvedor back-end</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="formulário-footer" class="formulário">
+        <div class="box-footer">
+            <h2>Entre <span>contato conosco</span></h2>
+            <form action="">
+                <input type="text" name="" id="" placeholder="nome:" required>
+                <input type="email" name="" id="" placeholder="email:" required>
+                <input type="password" name="" id="" placeholder="senha:" required>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Deixe uma menssagem:"></textarea>
+                <div class="button-enviar"><button>ENVIAR</button></div>
+            </form>
+        </div>
+        <div class="footer-content">
+            <div class="logo-footer">
+                <a href="#navbar"><img src="activs/img/logo.jpeg" alt=""></a>
+            </div>
+           <div class="socialmedia">
+                <a href="https://wa.me/5521983911868" target="_blank"><img src="activs/img/icons8-whatsapp-48.png" alt=""></a>
+                <a href="https://github.com/Gabriel-dev10" target="_blank"><img class="git" src="activs/img/icons8-github-64.png" alt=""></a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=gabrielssantana41@gmail.com" target="_blank"><img src="activs/img/icons8-gmail-novo-48.png" alt=""></a>
+                <p>Construindo um futruro estável para pessoas com TDAH <br>
+                © 2024. Todos os direitos reservados.</p>
+           </div>
+        </div>
+    </footer>

@@ -1,0 +1,303 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #bd8affc4;
+    width: 100%;
+    height: 100vh;
+    font-family: "Quicksand", sans-serif;
+}
+
+.navbar{
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.logo img{
+    width: 150px;
+}
+
+
+/* cabeça */
+
+header{
+    background-color: #440744;
+}
+
+header .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+    position: relative;
+}
+
+header nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+}
+
+header .more button{
+    cursor: pointer;
+    color: white;
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    border: 0;
+    border-radius:10px;
+    background: rgb(174, 0, 255);
+}
+
+
+/* linha nos a */
+
+header nav ul li a::after {
+    content: '';
+    position: absolute; 
+    left: 0; 
+    bottom: -5px;
+    width: 100%;
+    height: 2px; 
+    background-color: pink; 
+    transform: scaleX(0); 
+    transition: transform 0.5s ease;
+}
+
+header nav ul li a:hover::after {
+    transform: scaleX(1); 
+}
+
+/* Topo site inicio */
+
+section.main-section{
+    padding: 40px 4%;
+    display: flex;
+    max-width: 1600px;
+    margin: 0 auto;
+    border-bottom: 2px solid black;
+}
+
+.main-text{
+    text-align: center;
+}
+
+.main-text h1{
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+.main-text span{
+    color:  rgb(174, 0, 255);
+    font-weight: 900;
+}
+
+.main-p-sobre{
+    max-width: 50rem;
+    max-height: 25rem;
+    margin: 0 auto;
+    padding: 20px;  
+    border-radius: 10px;
+    font-size: 1.5rem;
+    text-align: justify;
+    overflow: hidden;
+}
+
+.main-p-sobre p {
+    font-size: 95%;
+    margin-bottom: 1rem;
+}
+
+.main-text span{
+    color: purple;
+    font-weight: 900;
+}
+
+.main-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-button button{
+    cursor: pointer;
+    color: white;
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    border: 0;
+    border-radius: 10px;
+    background: rgb(174, 0, 255);
+}
+
+.main-button i{
+    width: 30px;
+}
+
+/* rotação img */
+
+.main-img{
+    margin-top: 3rem;
+    margin-right: 20px;
+}
+
+.main-img img {
+    border-radius: 20px;
+    width: 700px;
+    transition: transform 2s ease; 
+}
+
+.main-img:hover img {
+    transform: rotatey(180deg); 
+}
+
+/* topo site fim */
+
+.main-sobre{
+    padding: 40px 4%;
+    display: flex;
+    max-width: 1600px;
+    margin: 0 auto;
+    border-bottom: 2px solid black;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex{
+    margin: 0 auto; 
+    display: flex;
+}
+
+.sobre-h1 {
+    max-width: 800px;
+    margin-bottom: 2rem; 
+    text-align: center;
+}
+
+.sobre-h1 h2{
+    color:  rgb(174, 0, 255);
+}
+
+
+/* estilo imgs */
+
+.card1, .card2{
+   margin: 2rem;
+   position: relative;
+   border-radius: 2rem;
+   overflow: hidden;
+}
+
+.card-img1, .card-img2{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card1-corpo, .card2-corpo{
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    border-radius: 1rem;
+    color: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 2s;
+}
+
+.card1:hover .card1-corpo, .card2:hover .card2-corpo{
+    top: 0;
+}
+
+/* fim sobre */
+
+.slide-container{
+    width: 65rem;
+    height: 40rem;
+    margin: 0 auto;
+    max-width: 80rem;
+    position: relative;
+    overflow: hidden;
+    margin-top: 3rem;
+}
+
+.slide-titulo{
+    text-align:center;
+    color:  rgb(174, 0, 255);
+}
+
+.slide{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    transition: all 0.5s ease-in-out;
+    text-align: center;
+}
+
+.slide img{
+    width: 30rem;
+    height: 30rem;
+    border-radius: 1rem;
+    margin-bottom: -3rem;
+}
+
+.slide h1{
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+}
+
+.btn-skip{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-skip button{
+    margin: 1rem;
+    cursor: pointer;
+    color: white;
+    padding: 0.5rem 4rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 0;
+    border-radius: 0.5rem;
+    background:  rgb(174, 0, 255);
+}
+
+.slide{
+    transform: translateX(-300%);
+}
+
+
+.slide:nth-child(1){
+    left: 0;
+}
+
+.slide:nth-child(2){
+    left: 100%;
+}
+
+.slide:nth-child(3){
+    left: 200%;
+}
+
+.slide:nth-child(4){
+    left: 300%;
+}
+
