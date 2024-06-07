@@ -75,6 +75,29 @@
                     </div>
                 </div>
         </section>
+        <section id="contador-section">
+            <div class="contador-container">
+                <h1>LANÇAMENTO EM BREVE</h1>
+                <div id="contador">
+                    <div class="time-box">
+                        <span id="dias">00</span>
+                        <p>Dias</p>
+                    </div>
+                    <div class="time-box">
+                        <span id="horas">00</span>
+                        <p>Horas</p>
+                    </div>
+                    <div class="time-box">
+                        <span id="minutos">00</span>
+                        <p>Minutos</p>
+                    </div>
+                    <div class="time-box">
+                        <span id="segundos">00</span>
+                        <p>Segundos</p>
+                    </div>
+                </div>
+            </div>
+        </section>        
         <section id="slide-section">
             <div class="slide-container">
                 <div class="slide-titulo" id="integrantes" >
@@ -83,14 +106,6 @@
                 <div class="slide">
                     <img src="activs/img/gabriel.png" class="slide-img" alt="">
                     <h1>Desenvolvedor Front-end</h1>
-                </div>
-                <div class="slide">
-                    <img src="activs/img/clara.png" class="slide-img" alt="">
-                    <h1>Pesquisadora</h1>
-                </div>
-                <div class="slide">
-                    <img src="activs/img/chicao.png" class="slide-img" alt="">
-                    <h1>Gerente do projeto</h1>
                 </div>
                 <div class="slide">
                     <img src="activs/img/josé.jpeg" class="slide-img" alt="">
@@ -114,12 +129,13 @@
         <footer id="formulário-footer" class="formulário">
             <div class="box-footer">
                 <h2>Entre <span>contato conosco</span></h2>
-                <form action="">
-                    <input type="text" name="" id="" placeholder="nome:" required>
-                    <input type="email" name="" id="" placeholder="email:" required>
-                    <input type="password" name="" id="" placeholder="senha:" required>
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Deixe uma menssagem:"></textarea>
-                    <div class="button-enviar"><button>ENVIAR</button></div>
+                <form method="post">
+                    <input type="text" name="name" placeholder="Digite seu nome:" required>
+                    <input type="email" name="email" placeholder=" Digite seu email:" required>
+                    <textarea name="mensagem" cols="30" rows="10" placeholder="Deixe uma menssagem:" required></textarea>
+                    <div class="button-enviar">
+                        <button type="submit">ENVIAR</button>
+                    </div>
                 </form>
             </div>
             <div class="footer-content">
