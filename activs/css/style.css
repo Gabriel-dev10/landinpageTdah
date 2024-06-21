@@ -282,7 +282,7 @@ section.main-section{
     transform: translateX(0%);
 }
 
-
+/* posição dos elementos no caso imgs */
 .slide:nth-child(1){
     left: 0;
 }
@@ -380,44 +380,4 @@ form textarea{
 
 .socialmedia p{
     font-size: 20px;
-}
-
-/* Estilos para a seção de contagem regressiva */
-#contador-section{
-    padding: 50px 0;
-    text-align: center;
-}
-
-.contador-container{
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.contador-container h1{
-    color: purple;
-}
-
-#contador{
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.time-box{
-    background-color: #fff;
-    border: 1px solid purple;
-    border-radius: 10px;
-    padding: 20px;
-    width: 100px;
-}
-
-.time-box span{
-    display: block;
-    font-size: 2em;
-    font-weight: bold;
-}
-
-.time-box p{
-    margin: 0;
-    font-size: 1em;
 }
