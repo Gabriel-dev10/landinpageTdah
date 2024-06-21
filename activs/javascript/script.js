@@ -36,6 +36,16 @@
 //     });
 // }
 
+function menuNav() {
+    let menuMobile = document.querySelector('.mobile-menu');
+    if (menuMobile.classList.contains('open')) {
+        menuMobile.classList.remove('open');
+    } else {
+        menuMobile.classList.add('open');
+    }
+}
+
+
 const slides = document.querySelectorAll('.slide');
 const nextBtn = document.querySelector('.skipbtn');
 const backBtn = document.querySelector('.backbtn');

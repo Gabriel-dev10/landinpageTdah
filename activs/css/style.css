@@ -133,6 +133,14 @@ header nav ul li a:hover::after {
     transform: scaleX(1); 
 }
 
+.mobile{
+    display: none;
+}
+
+.mobile-menu{
+    display: none;
+}
+
 /* Topo site inicio */
 
 section.main-section{
@@ -473,8 +481,8 @@ form textarea{
 @media (min-width: 360px) and (max-width: 800px) {
     
     header .navbar {
-        flex-direction: column;
-        text-align: center;
+        flex-direction: row;
+        
     }
 
     header nav ul {
@@ -486,6 +494,49 @@ form textarea{
         padding: 10px 0;
     }
     
+    .nav{
+        display: none;
+    }
+
+    .logo img{
+        width: 100px;
+    }
+
+    .more{
+        display: none;
+    }
+
+    .mobile{
+        display: block;
+    }
+
+    .mobile button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        margin-right: 1rem;
+    }
+
+    .mobile-menu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .mobile-menu .nav-item{
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .mobile-menu .more button {
+        width: 100%;
+    }
+
+    .open{
+        display: block;
+    }
+
     section.main-section {
         flex-direction: column;
         align-items: center;
