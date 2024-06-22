@@ -36,6 +36,7 @@
 //     });
 // }
 
+// menu 
 function menuNav() {
     let menuMobile = document.querySelector('.mobile-menu');
     if (menuMobile.classList.contains('open')) {
@@ -45,7 +46,7 @@ function menuNav() {
     }
 }
 
-
+// carrossel
 const slides = document.querySelectorAll('.slide');
 const nextBtn = document.querySelector('.skipbtn');
 const backBtn = document.querySelector('.backbtn');

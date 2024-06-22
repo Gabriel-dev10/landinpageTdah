@@ -169,9 +169,6 @@ section.main-section{
 .main-p-sobre{
     max-width: 50rem;
     max-height: 25rem;
-    margin: 0 auto;
-    padding: 20px;  
-    border-radius: 10px;
     font-size: 1.5rem;
     text-align: justify;
     overflow: hidden;
@@ -243,8 +240,17 @@ section.main-section{
 
 .sobre-h1 {
     max-width: 800px;
-    margin-bottom: 2rem; 
+    margin-bottom: 1rem; 
     text-align: center;
+}
+
+.sobre-h1 p {
+    margin-top: 3rem;
+    max-width: 50rem;
+    max-height: 25rem;
+    font-size: 1.5rem;
+    text-align: justify;
+    overflow: hidden;
 }
 
 .sobre-h1 h2{
@@ -425,9 +431,9 @@ form textarea{
 .footer-content {
     max-width: 80rem;
     margin: 0 auto;
-    display: flex; /* Adiciona o display flex para o contêiner pai */
-    align-items: center; /* Alinha verticalmente ao centro */
-    justify-content: space-between; /* Espaça os itens para os lados opostos */
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
 }
 
 .logo-footer img{
@@ -478,11 +484,12 @@ form textarea{
 /* responsividade */
 
 /* Responsividade para Mobile */
-@media (min-width: 360px) and (max-width: 800px) {
-    
+
+@media (min-width: 320px) and (max-width: 568px) {
+      
     header .navbar {
         flex-direction: row;
-        
+        border-bottom: 2px solid black;
     }
 
     header nav ul {
@@ -527,10 +534,19 @@ form textarea{
     .mobile-menu .nav-item{
         display: block;
         padding-top: 1.2rem;
+        color: white;
+        text-decoration: none;
     }
 
-    .mobile-menu .more button {
-        width: 100%;
+    .mobile-menu .nav-item button {
+        cursor: pointer;
+        color: white;
+        padding: 10px 10px;
+        font-size: 18px;
+        font-weight: 600;
+        border: 0;
+        border-radius:10px;
+        background: rgb(174, 0, 255);
     }
 
     .open{
@@ -545,12 +561,16 @@ form textarea{
     .main-img img {
         width: 500px;
         max-width: 300px;
-        margin-left: 2rem;
+        margin-left: 1.4rem;
     }
 
     .main-p-sobre {
-        max-height: 100%;
+        margin-top: 3rem;
+        max-width: 80rem;
+        max-height: 30rem;
+        font-size: 1rem;
         text-align: justify;
+        overflow: hidden;
     }
     
     .main-button {
@@ -577,7 +597,206 @@ form textarea{
 
     }
 
+    .sobre-h1 p {
+        margin-top: 3rem;
+        max-width: 80rem;
+        max-height: 30rem;
+        font-size: 1rem;
+        text-align: justify;
+        overflow: hidden;
+    }
+
+    .card1,
+    .card2 {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    }
+
+    .card1 img,
+    .card2 img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    }
+
+    .slide-container {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .card1-corpo, .card2-corpo{
+        display: none;
+    }
+
+    /* carrossel */
+    
+    .slide img {
+        width: 300px;
+        height: 500px;
+    }
+
+    .btn-skip button{
+        padding: 0.5rem 2rem;
+    }
+    
+    /* rodapé */
+    footer.formulario {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-footer{
+        display: none;
+    }
+
+    .footer-content , .footer-content .socialmedia {
+        margin-left: 0.5rem;
+    }
+    
+}
+
+
+@media (min-width: 360px) and (max-width: 880px) {
+    
+    header .navbar {
+        flex-direction: row;
+        border-bottom: 2px solid black;
+    }
+
+    header nav ul {
+        padding: 0;
+    }
+
+    header nav ul li {
+        display: block;
+        padding: 10px 0;
+    }
+    
+    .nav{
+        display: none;
+    }
+
+    .logo img{
+        width: 100px;
+    }
+
+    .more{
+        display: none;
+    }
+
+    .mobile{
+        display: block;
+    }
+
+    .mobile button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        margin-right: 1rem;
+    }
+
+    .mobile-menu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .mobile-menu .nav-item{
+        display: block;
+        padding-top: 1.2rem;
+        color: white;
+        text-decoration: none;
+    }
+
+    .mobile-menu .nav-item button {
+        cursor: pointer;
+        color: white;
+        padding: 10px 10px;
+        font-size: 18px;
+        font-weight: 600;
+        border: 0;
+        border-radius:10px;
+        background: rgb(174, 0, 255);
+    }
+
+    .open{
+        display: block;
+    }
+
+    section.main-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-img img {
+        width: 500px;
+        max-width: 300px;
+        margin-left: 2rem;
+    }
+
+    .main-p-sobre {
+        margin-top: 3rem;
+        max-width: 80rem;
+        max-height: 30rem;
+        font-size: 1rem;
+        text-align: justify;
+        overflow: hidden;
+    }
+
+    .main-p-sobre p {
+        font-size: none;
+        margin-bottom: 1rem;
+    }
+
+    .main-button {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-button button {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /* figma */
+
+    .main-sobre {
+        margin-top: -20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sobre-h1 p {
+        margin-top: 3rem;
+        max-width: 80rem;
+        max-height: 30rem;
+        font-size: 1rem;
+        text-align: justify;
+        overflow: hidden;
+    }
+
+    .flex {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
     .card1 img{
+        width: 500px;
+        max-width: 300px;
+        margin-left: -1rem;
+    }
+
+    .card2 img{
         width: 500px;
         max-width: 300px;
         margin-left: -1rem;
@@ -619,11 +838,31 @@ form textarea{
     
 }
 
-/* Responsividade para Tablet */
-@media (min-width: px) and (max-width: px) {
-    
- }
 
+@media (min-width: 768px) and (max-width: 880px) {
+
+    .main-img img {
+        max-width: none;
+        width: 450px;
+    }    
+
+    .card1 img{
+        max-width: none;
+        width: 450px;
+    }
+
+    .card2 img{
+        max-width: none;
+        width: 450px;
+    }    
+
+}
+
+
+
+
+
+/* Responsividade para Tablet */
 @media (min-width: 1025px) and (max-width: 1280px) {
     
 }
