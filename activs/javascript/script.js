@@ -1,50 +1,23 @@
-// // seleciona os elementos no html
-// const slides = document.querySelectorAll('.slide');
-// const nextBtn = document.querySelector('.skipbtn');
-// const backBtn = document.querySelector('.backbtn');
-
-// // define a posição dos slides na horizontal
-// slides.forEach(function(slide, index){
-//     slide.style.left = `${index * 100}%`;
-// });
-
-// let counter = 0;
-
-
-// backBtn.addEventListener('click', function (){
-//     counter--; 
-//     carousel();
-// });
-
-// nextBtn.addEventListener('click', function (){
-//     counter++; 
-//     carousel(); 
-// });
-
-// function carousel() {
-    
-//     if (counter === slides.length) {
-//         counter = 0;
-//     }
-
-//     if (counter < 0) {
-//         counter = slides.length - 1;
-//     }
-
-//     slides.forEach(function(slide){
-//         slide.style.transform = `translateX(-${counter * 100}%)`;
-//     });
-// }
 
 // menu 
 function menuNav() {
     let menuMobile = document.querySelector('.mobile-menu');
+    let overlayMenu = document.querySelector('#overlay-menu');
+    
     if (menuMobile.classList.contains('open')) {
         menuMobile.classList.remove('open');
+        overlayMenu.classList.remove('open');
     } else {
         menuMobile.classList.add('open');
+        overlayMenu.classList.add('open');
     }
 }
+
+document.querySelector('#overlay-menu').addEventListener('click', function() {
+    document.querySelector('.mobile-menu').classList.remove('open');
+    this.classList.remove('open');
+});
+
 
 // carrossel
 const slides = document.querySelectorAll('.slide');

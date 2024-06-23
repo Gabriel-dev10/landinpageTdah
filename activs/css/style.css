@@ -56,64 +56,6 @@ header .more button{
     border-radius:10px;
     background: rgb(174, 0, 255);
 }
-/* Estilos para o menu lateral */
-.sidebar {
-    position: fixed;
-    top: 0;
-    right: -300px; /* Esconde o menu fora da tela */
-    width: 300px; /* Largura do menu lateral */
-    height: 100%;
-    background-color: #440744;
-    transition: right 0.3s ease;
-    z-index: 1000; /* Garante que o menu esteja na frente do conteúdo */
-}
-
-.sidebar.show {
-    right: 0; /* Exibe o menu ao definir a posição direita para 0 */
-}
-
-.sidebar ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 100px 0 0 0;
-}
-
-.sidebar ul li {
-    margin-bottom: 20px;
-}
-
-.sidebar ul li a {
-    display: block;
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-    padding: 15px 30px;
-    transition: background-color 0.3s ease;
-}
-
-.sidebar ul li a:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-/* Estilos para o botão de fechar */
-.close-menu {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    cursor: pointer;
-    color: white;
-    font-size: 24px;
-    z-index: 1100;
-}
-
-.close-menu i {
-    transition: transform 0.3s ease;
-}
-
-.close-menu:hover i {
-    transform: scale(1.2); /* Efeito de escala no ícone ao passar o mouse */
-}
-
 
 /* linha nos a */
 
@@ -141,6 +83,20 @@ header nav ul li a:hover::after {
     display: none;
 }
 
+.overlay-menu{
+    background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+    display: none;
+}
+
+.overlay-menu.open {
+    display: block;
+}
 /* Topo site inicio */
 
 section.main-section{
@@ -351,6 +307,21 @@ section.main-section{
 
 .slide{
     transform: translateX(0%);
+}
+
+.txt-slide{
+    padding: 40px 4%;
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.txt-slide p{
+    max-width: 50rem;
+    max-height: 25rem;
+    font-size: 1.5rem;
+    text-align: justify;
+    overflow: hidden;
 }
 
 /* posição dos elementos no caso imgs */
@@ -642,6 +613,14 @@ form textarea{
         padding: 0.5rem 2rem;
     }
     
+    .txt-slide p{
+        max-width: 80rem;
+        max-height: 30rem;
+        font-size: 1rem;
+        text-align: justify;
+        overflow: hidden;
+    }
+
     /* rodapé */
     footer.formulario {
         flex-direction: column;
@@ -817,6 +796,7 @@ form textarea{
         width: 350px;
     }
 
+    
     /* rodapé */
     footer.formulario {
         flex-direction: column;
@@ -860,18 +840,47 @@ form textarea{
 
 
 
-
-
 /* Responsividade para Tablet */
+@media (min-width: 880px) and (max-width: 1024px) {
+
+    .main-img img {
+        width: 500px;
+        
+    }
+    
+    .main-p-sobre {
+        margin-top: 3rem;
+        max-width: 80rem;
+        max-height: 30rem;
+        font-size: 1rem;
+        text-align: justify;
+        overflow: hidden;
+    }
+
+    .txt-slide{
+        max-width: 800px;
+    }
+    
+}
+
+/* Responsividade para tablet*/
 @media (min-width: 1025px) and (max-width: 1280px) {
+    .main-img img {
+        width: 500px;
+        margin-top: 7rem;   
+    }
     
-}
+    .main-p-sobre {
+        margin-top: 3rem;
+        max-width: 60rem;
+        max-height: 30rem;
+        font-size: 1.5rem;
+        text-align: justify;
+        overflow: hidden;
+    }
 
-/* Responsividade para Desktop */
-@media (min-width: 1281px) and (max-width: 1440px) {
-    
-}
-
-@media (min-width: 1441px) {
+    .txt-slide{
+        max-width: 900px;
+    }
     
 }
