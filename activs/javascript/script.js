@@ -19,59 +19,59 @@ document.querySelector('#overlay-menu').addEventListener('click', function() {
 });
 
 
-// carrossel
-const slides = document.querySelectorAll('.slide');
-const nextBtn = document.querySelector('.skipbtn');
-const backBtn = document.querySelector('.backbtn');
-
-slides.forEach(function(slide, index){
-    slide.style.left = `${index * 100}%`;
-});
-
-let contar = 0;
-let intervaloId; 
-
-//Avanço automático
-function startCarrossel() {
-    intervaloId = setInterval(function() {
-        contar++;
-        carrossel();
-    }, 3000); 
-}
-
-function stopCarrossel() {
-    clearInterval(intervaloId);
-}
-
-startCarrossel();
-
-
-nextBtn.addEventListener('click', function (){
-    contar++; 
-    stopCarrossel(); 
-    carrossel(); 
-    startCarrossel(); 
-});
-
-
-backBtn.addEventListener('click', function (){
-    contar--; 
-    stopCarrossel(); 
-    carrossel(); 
-    startCarrossel(); 
-});
-
-// reinicia o contador
-function carrossel() {
-    if (contar >= slides.length) {
-        contar = 0; 
-    }
-
-    if (contar < 0) {
-        contar = slides.length - 1; 
-    }
+    // carrossel
+    const slides = document.querySelectorAll('.slide');
+    const nextBtn = document.querySelector('.skipbtn');
+    const backBtn = document.querySelector('.backbtn');
 
     slides.forEach(function(slide, index){
-        slide.style.transform = `translateX(-${contar * 100}%)`;
+        slide.style.left = `${index * 100}%`;
     });
-}
+
+    let contar = 0;
+    let intervaloId; 
+
+    //Avanço automático
+    function startCarrossel() {
+        intervaloId = setInterval(function() {
+            contar++;
+            carrossel();
+        }, 3000); 
+    }
+
+    function stopCarrossel() {
+        clearInterval(intervaloId);
+    }
+
+    startCarrossel();
+
+
+    nextBtn.addEventListener('click', function (){
+        contar++; 
+        stopCarrossel(); 
+        carrossel(); 
+        startCarrossel(); 
+    });
+
+
+    backBtn.addEventListener('click', function (){
+        contar--; 
+        stopCarrossel(); 
+        carrossel(); 
+        startCarrossel(); 
+    });
+
+    // reinicia o contador
+    function carrossel() {
+        if (contar >= slides.length) {
+            contar = 0; 
+        }
+
+        if (contar < 0) {
+            contar = slides.length - 1; 
+        }
+
+        slides.forEach(function(slide, index){
+            slide.style.transform = `translateX(-${contar * 100}%)`;
+        });
+    }
